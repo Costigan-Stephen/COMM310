@@ -1,0 +1,47 @@
+/* Global Values
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.5em;
+    margin: 10px;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
+}
+
+.social,
+footer {
+    background-color: $footer;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+
+    a {
+        color: white;
+    }
+}
+
+.social {
+    list-style: none;
+    margin: 0px;
+    padding: 0 30px;
+
+    a {
+        padding: 0 5px;
+
+        img {
+            margin-bottom: -1px;
+            align-items: center;
+        }
+    }
+
+}

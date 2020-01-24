@@ -1,0 +1,28 @@
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.tab {
+    padding-left: 40px;
+}
+
+.spacer {
+    content: "&nbsp;";
+    padding: 30px;
+}
+
+header {
+    margin-top: 0px !important;
+}
+
+.innerPadding {
+    padding: 40px 30px !important;
+}
+
+.top {
+    top: $nav-height;
+}
+
+.float {
+    float: right;
+    padding-left: 30px;
+}

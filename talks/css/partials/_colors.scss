@@ -1,0 +1,21 @@
+/* Colors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$gray: #F5F5F5;
+$header: #28629c;
+$footer: #152d45;
+
+.gray {
+    background-color: $gray;
+    box-shadow: inset 10px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+    color: #1EAEDB;
+}
+
+a:hover {
+    color: #0FA0CE;
+}
