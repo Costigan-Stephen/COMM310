@@ -1,0 +1,63 @@
+.button {
+    padding: 3px 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.article {
+    padding: 20px;
+
+    h2 {
+        margin: 0px;
+
+        span {
+            display: block;
+            font-size: .75em;
+            font-weight: normal;
+        }
+    }
+
+    .button:link,
+    .button:visited {
+        border: 2pt solid $blurb;
+        color: $blurb;
+        transition: .5s;
+    }
+
+    .button:hover {
+        background: $blurb;
+        color: white;
+        padding: 3px 10px;
+    }
+
+    .button:active {
+        text-decoration: underline;
+    }
+}
+
+.blurb.article {
+    background-color: $blurb;
+    color: white;
+
+    .button:link,
+    .button:visited {
+        border: 2pt solid white;
+        color: white;
+        transition: .5s;
+    }
+
+    .button:hover {
+        background-color: white;
+        color: $blurb;
+    }
+}
+
+#toggle,
+nav label {
+    display: none;
+}
+
+.overview {
+    background-color: #2B2B2B;
+    color: white;
+}
