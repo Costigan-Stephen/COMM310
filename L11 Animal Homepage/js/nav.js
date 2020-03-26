@@ -3,3 +3,11 @@ function toggleNav() {
     //toggle adds a class if it's not there or removes it if it is.
     updateElement.classList.toggle("open");
 }
+
+function closenav() {
+    var updateElement = document.getElementById("menu-icon");
+
+    if (updateElement.classList.contains('open')) {
+        updateElement.classList.toggle("open");
+    }
+}

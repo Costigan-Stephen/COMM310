@@ -1,29 +1,124 @@
 @media (max-width: $minWidth) {
     html {
         margin: 0;
-        width: 100%;
+        // width: 100%;
         max-width: 100vw;
+        display: block;
+    }
+
+    .button {
+        margin-top: 30px;
+        width: 90%;
+        text-align: center;
     }
 
     body {
         width: 100%;
     }
 
-    .innerPadding {
-        padding: 40px 0px !important;
+    .koala {
+        max-width: 50%;
+        transition: 0s ease;
     }
 
-    .highlight,
-    .titleHighlight,
-    .codeBlock {
+    .fullspread {
+        max-width: 100vw;
+
+        .tableCol {
+            display: table-row;
+
+            figure,
+            figcaption,
+            .twothird-table,
+            .onethird-table,
+            .onehalf-table,
+            .twothird,
+            .onethird,
+            .onehalf,
+            .rescue,
+            .success {
+                display: table-cell;
+                float: none;
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                padding: 30px;
+
+                p,
+                h2 {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+
+    figure {
+        position: relative;
+        padding: 0 !important;
         margin: 0;
-        margin-left: -7px;
-        padding: 0;
     }
 
-    .titleHighlight {
-        margin-bottom: 40px;
-        padding: 10px;
+    figure img {
+        display: block;
+        padding: 0 !important;
+        max-width: 100%;
+        height: auto;
+    }
+
+    figcaption {
+        display: inline-block;
+        position: absolute;
+        padding: 0 !important;
+        width: 100%;
+    }
+
+    .reverse {
+        transform: ScaleY(-1);
+
+        p,
+        h2,
+        a {
+            transform: ScaleX(-1);
+        }
+    }
+
+    .first {
+        transform: ScaleY(-1);
+
+        p,
+        h2,
+        a {
+            transform: ScaleX(-1);
+        }
+    }
+
+    .flipit {
+        transform: rotate(180deg);
+    }
+
+    .home {
+        background-position: center -250px;
+    }
+
+    .logo {
+        max-width: 25%;
+        top: 10px;
+        right: 20px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .innerPadding {
+        padding: 0px 0px !important;
     }
 
     .paragraph,
@@ -37,6 +132,7 @@
 
     p,
     .cp_embed_wrapper {
+        text-align: center;
         margin-top: 0;
         margin-bottom: 0;
         font-size: 12pt;
@@ -46,12 +142,6 @@
         position: relative;
         margin-left: 2px;
         margin-right: 10px;
-    }
-
-    .about,
-    .titleText {
-        left: 3px;
-        margin-right: 12px;
     }
 
     h1,
@@ -77,44 +167,6 @@
         text-align: left;
         padding: 0px;
         clear: both;
-    }
-
-    .full {
-        width: 65%;
-    }
-
-    .half {
-        display: block;
-        float: none;
-        width: 100%;
-    }
-
-    .arrange {
-        display: grid;
-        grid-template-areas:
-            "left1"
-            "right1"
-            "left2"
-            "right2";
-
-        .line {
-            border-top: 1px solid black;
-            padding: 10px 0;
-        }
-
-        h5 {
-            font-size: 2.5rem;
-            font-weight: bolder;
-            text-decoration: none;
-        }
-
-        img {
-            padding: 20px 5px;
-            align-items: center;
-            justify-self: center;
-            width: 30%;
-            height: auto;
-        }
     }
 
     .paragraph>.right {

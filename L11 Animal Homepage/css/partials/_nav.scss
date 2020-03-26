@@ -7,13 +7,14 @@ nav {
     justify-content: center;
     text-align: center;
     margin: auto;
+    width: 100%;
 
     ul {
         list-style-type: none;
         overflow: hidden;
         border: none;
-        padding: 0 0 0 0 !important;
-        margin: 0 0 0 50px;
+        padding: 0 !important;
+        margin: 0 20px;
         background-color: $header;
         height: $nav-height;
     }
@@ -28,7 +29,7 @@ nav {
         width: 120px;
         height: auto;
         align-items: center;
-        margin: 18px 40px 0 0;
+        margin: 18px 0 0 0;
     }
 
     a {
@@ -37,13 +38,53 @@ nav {
         text-align: center;
         padding: 20px;
         text-decoration: none;
+        transition: 2s ease;
+    }
+
+    button {
+        background-image: url('../images/search.png');
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    button:hover {
+        background-image: url('../images/search-blk.png');
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    button:active {
+        background-color: #626262;
+        background-image: url('../images/search-press.png');
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center center;
     }
 
     @media (min-width: $minWidth) {
+
+        button:hover {
+            transform: scale(1.1);
+            transition: 1s ease;
+        }
+
+        input {
+            transition: 1s ease;
+        }
+
+        input:hover {
+            transform: scale(1.1);
+            transition: 1s ease;
+        }
+
         a:hover {
             background-color: $hover;
             text-decoration: none;
             color: $hoverText;
+            transform: scaleY(1.1);
+            transition: 1s ease;
         }
 
         .current {
@@ -51,6 +92,7 @@ nav {
         }
     }
 }
+
 
 @media (max-width: $minWidth) {
 

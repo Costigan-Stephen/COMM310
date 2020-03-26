@@ -10,120 +10,132 @@
 </head>
 
 <body>
-  <header>
-    <section class="home fullwidth extraSpace">
-      <div class="menu-icon" id="menu-icon"></div>
-      <img src='images/logowhite.png' alt="IARS Logo">
-    </section>
+  <div class="menu-icon" id="menu-icon">
+    <header>
+      <div class="home fullwidth">
+        <img src='images/head-left.png' alt="Koala" class="koala">
+        <img src='images/logowhite.png' alt="IARS Logo" class="logo">
+      </div>
 
-    <nav class="fullwidth">
-      <span onclick="toggleNav()"></span>
-      <ul>
-        <li><a href="#">RESCUE EFFORTS</a></li>
-        <li><a href="#">MEASURING SUCCESS</a></li>
-        <li><a href="#">VOLUNTEER</a></li>
+      <nav class="fullwidth">
+        <span onclick="toggleNav()"></span>
+        <ul>
+          <li><a href="#rescue" onclick="closenav()">RESCUE EFFORTS</a></li>
+          <li><a href="#success" onclick="closenav()">MEASURING SUCCESS</a></li>
+          <li><a href="#cause" onclick="closenav()">VOLUNTEER</a></li>
+        </ul>
+        <input type="text" placeholder="Search..">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </nav>
+    </header>
+    <main>
+      <section class="innerPadding fullspread">
+        <div class="tableCol">
+          <div class="onethird-table overview">
+            <h2>Overview</h2>
+            <p>In the event of a natural disaster, the Indigenous Animals Rescue Service goes to the front
+              lines to protect and preserve the natural wildlife impacted in the disaster.</p>
+            <a class="button" href="#">Read More</a>
+          </div>
+        </div>
+        <div class="tableCol">
+          <figure class="twothird-table">
+            <img src='images/overview.jpg' alt="holding koala">
+            <figcaption>
+              <p>Whatever the challenges, the IARS will be there! We can't do it alone, volunteer your time
+                today!</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="fullwidth rescue">
+        <div class="paragraph fullspread">
+          <div id="rescue" class="onethird tableCol">
+            <h2>Rescue</h2>
+            <h2>Efforts</h2>
+          </div>
+          <div class="twothird tableCol">
+            <p>
+              The rescue effort requires able bodied individuals who have desires to help the environment. Any efforts,
+              big or small, are not only adequate, but encouraged. We at the Indigenous Animals Rescue Service firmly
+              believe that every effort is its own reward and that together, we can make a world of difference!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="innerPadding fullspread">
+        <div class="tableCol">
+          <figure class="twothird-table">
+            <img src='images/care.jpg' alt="holding koala">
+            <figcaption>
+              <p>We do our best to keep the wildlife wild and
+                return them with minimal domestication.</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="tableCol">
+          <div class="care onethird-table">
+            <h2>Animal Care</h2>
+            <p>Here at the Indigenous Animals Rescue Service, our goal is to keep the wildlife wild. While our expert
+              animal health specialists take excellent care of the animals, we do what we can to avoid domestication. In
+              doing so, we ensure the best chance for survival when the animals are returned to their homes when it is
+              safe to do so. </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="innerPadding fullwidth success">
+        <div class="paragraph fullspread">
+          <div id="success" class="onethird tableCol">
+            <h2>Measuring</h2>
+            <h2>Success</h2>
+          </div>
+          <div class="twothird tableCol">
+            <p>
+              Success is measured in our best efforts, but also in ensuring that every animal that comes into our care
+              is properly cared for. We aim to be able to care for 100% of all animals brought to our care. We also
+              determine success to be measured by community involvement in our rescue efforts.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="innerPadding fullspread flipit">
+        <div class="tableCol first">
+          <div id="cause" class="onehalf-table cause">
+            <h2>Join the Cause</h2>
+            <p>We need you! While our organization spans the entirety of the Australian countryside, we are made up
+              entirely of determined volunteers. Without your help we aren't able to do anything! Whether that help is
+              small in scale, the difference could be lifechanging for another. Be the difference you want to see in
+              this world, join the cause today!</p>
+            <a class="button" href="#">Volunteer</a>
+          </div>
+        </div>
+        <div class="tableCol reverse">
+          <figure class="onehalf-table">
+            <img src='images/cause.jpg' alt="holding koala">
+            <figcaption>
+              <p>Our volunteers work with trained experts so that both the animals and the volunteers are safe and cared
+                for.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+    </main>
+    <footer class="fullwidth">
+      <ul class="social">
+        <li><img src="images/icons/gplus.png" alt="Google Plus"></li>
+        <li><img src="images/icons/twt.png" alt="Twitter"></li>
+        <li><img src="images/icons/fb.png" alt="Facebook"></li>
+        <li><img src="images/icons/rss.png" alt="RSS Feed"></li>
       </ul>
-    </nav>
-  </header>
-  <main class="content">
-    <section class="innerPadding">
-      <div class="paragraph">
-        <div class="onethird">
-          <h2>Overview</h2>
-          <p>In the event of a natural disaster, the Indigenous Animals Rescue Service goes to the front
-            lines to protect and preserve the natural wildlife impacted in the disaster.</p>
-        </div>
-        <figure class="twothird">
-          <img src='images/overview.jpg' alt="holding koala">
-          <figcaption>
-            <p>Whatever the challenges, the IARS will be there! We can't do it alone, volunteer your time
-              today!</p>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="innerPadding fullwidth">
-      <div class="paragraph rescue">
-        <div id="aboutDiv" class="onethird">
-          <h2>Rescue</h2>
-          <h2>Efforts</h2>
-        </div>
-        <div class="twothird">
-          <p>
-            The rescue effort requires able bodied individuals who have desires to help the environment. Any efforts,
-            big or small, are not only adequate, but encouraged. We at the Indigenous Animals Rescue Service firmly
-            believe that every effort is its own reward and that together, we can make a world of difference!
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="innerPadding">
-      <div class="paragraph care">
-        <figure class="twothird">
-          <img src='images/care.jpg' alt="holding koala">
-          <figcaption>
-            <p>We do our best to keep the wildlife wild and
-              return them with minimal domestication.</p>
-          </figcaption>
-        </figure>
-        <div class="care onethird">
-          <h2>Animal Care</h2>
-          <p>Here at the Indigenous Animals Rescue Service, our goal is to keep the wildlife wild. While our expert
-            animal health specialists take excellent care of the animals, we do what we can to avoid domestication. In
-            doing so, we ensure the best chance for survival when the animals are returned to their homes when it is
-            safe to do so. </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="innerPadding fullwidth">
-      <div class="paragraph rescue">
-        <div id="aboutDiv" class="onethird">
-          <h2>Measuring</h2>
-          <h2>Success</h2>
-        </div>
-        <div class="twothird">
-          <p>
-            Success is measured in our best efforts, but also in ensuring that every animal that comes into our care
-            is properly cared for. We aim to be able to care for 100% of all animals brought to our care. We also
-            determine success to be measured by community involvement in our rescue efforts.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="innerPadding">
-      <div class="paragraph about">
-        <div id="aboutDiv" class="onehalf">
-          <h2>Join the Cause</h2>
-          <p>We need you! While our organization spans the entirety of the Australian countryside, we are made up
-            entirely of determined volunteers. Without your help we aren't able to do anything! Whether that help is
-            small in scale, the difference could be lifechanging for another. Be the difference you want to see in
-            this world, join the cause today!</p>
-        </div>
-        <figure class="onehalf">
-          <img src='images/cause.jpg' alt="holding koala">
-          <figcaption>
-            <p>Our volunteers work with trained experts so that both the animals and the volunteers are safe and cared
-              for.</p>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
-  </main>
-  <footer class="fullwidth">
-    <ul class="social">
-      <li><img src="images/icons/gplus.png" alt="Google Plus"></li>
-      <li><img src="images/icons/twt.png" alt="Twitter"></li>
-      <li><img src="images/icons/fb.png" alt="Facebook"></li>
-      <li><img src="images/icons/rss.png" alt="RSS Feed"></li>
-    </ul>
-    &copy; 2020 iARS. All rights reserved. &nbsp;
-    <br /><br />
-  </footer>
+      &copy; 2020 iARS. All rights reserved. &nbsp;
+      <br /><br />
+    </footer>
+  </div>
 </body>
 
 </html>
